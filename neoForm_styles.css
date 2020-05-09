@@ -1,0 +1,352 @@
+@font-face {
+    font-family: blanka;
+    src: url(Fonts/Blanka-Regular.otf);
+}
+
+@font-face {
+    font-family: anuranti;
+    src: url(Fonts/Anurati-Regular.otf);
+}
+
+:root {
+    --light-shadow: rgba(255, 255, 255, 0.9);
+    --form-color: #e0e5ec;
+    --dark-shadow: rgba(0, 0, 0, 0.3);
+    --hover-shadow: rgba(0, 0, 0, 0.7);
+}
+
+html {
+    background-color: var(--form-color);
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    appearance: none;
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    /* safari & chrome */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body>* {
+    background-color: var(--form-color);
+    text-align: center;
+}
+
+#form-title {
+    font-family: blanka;
+    font-size: 15vh;
+    color: var(--form-color);
+    text-shadow: 3px 3px 3px var(--dark-shadow), -3px -3px 3px var(--light-shadow);
+    letter-spacing: 3px;
+}
+
+/*--------------- Navbar BEGINS -----------------*/
+
+
+/* Style the sidebar - fixed full height */
+
+
+
+
+
+section {
+    margin-top: 100px;
+    position: fixed;
+    left: -20px;
+    text-align: right;
+    padding: 0px;
+    width: 95px;
+    font-size: 40px;
+    align-items: flex-end;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    background: var(--form-color);
+     transition: 0.5s;
+    
+}
+ 
+section:active {
+    left: 10px;
+    width: 115px;
+}
+
+
+.icon-box {
+    
+    font-size: 40px;
+    color: #666;
+    line-height: 48px;
+    text-align: right;
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0px;
+    float: left;
+    margin: auto;
+    transition: 0.5s;
+    
+   
+
+}
+
+.icon-box:focus {
+    outline: none;
+    border: none;
+     box-shadow: inset  -1px -1px 1px var(--light-shadow),
+    inset  1px 1px 1px var(--dark-shadow);
+}
+
+/* Icons */
+
+icon-fx {
+
+    height: 100%;
+    width: 100%;
+    background: tranparent;
+    position: relative;
+    display: block;
+    left: 9px;
+
+}
+
+/* navbar fx */
+/*
+ .icon-fx:active > .btm-line {
+  
+  margin: -1.5px 0px 0px -10px;
+  left: 50%;
+  top: 50%;  
+  
+}
+
+.icon-fx:active > .top-line {
+  
+  margin: -1.5px 0px 0px -10px;
+  left: 50%;
+  top: 50%;  
+  
+}
+*/
+
+.center-line {
+
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #666;
+    margin: -1.5px 0 0 -10px;
+    left: 50%;
+    top: 50%;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.top-line {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #666;
+    margin: -3px 0 0 -10px;
+    left: 50%;
+    top: 40%;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.btm-line {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #666;
+    margin: 1.5px 0 0 -10px;
+    left: 50%;
+    top: 60%;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+
+.side-navbar a:hover {
+    left: 0px;
+   
+    /* transition on focus */
+    box-shadow: -1px -1px 1px var(--light-shadow), 1px 1px 1px var(--dark-shadow);
+    /*box-shadow: inset 1px 1px 3px var(--dark-shadow),
+    inset -1px -1px 3px var(--light-shadow);*/
+}
+
+/* ********************* END OF NAVBAR ************************* */
+
+.row-1 h1 {
+    color: gray;
+    text-shadow: white 2px 2px
+}
+
+#form {
+    background: var(--form-color);
+}
+
+/* *************** Input & Rows begin here ***************** */
+.row-2,
+.row-3 {
+    height: 0px;
+    width: 50vw;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: ;
+    font-weight: ;
+}
+
+
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: anuranti;
+    height: 5vh;
+    width: 50vw;
+    color: var(--form-color);
+    text-shadow: 1px 1px 1px var(--dark-shadow), -1px -1px 2px var(--light-shadow);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+
+    border: 0;
+    outline: 0;
+    background-color: var(--form-color);
+    box-shadow: inset 2px 2px 5px var(--dark-shadow),
+        inset -2px -2px 5px var(--light-shadow);
+    border-radius: 10px;
+    padding: 13px;
+
+}
+
+input:focus {
+    box-shadow: inset 1px 1px 2px var(--dark-shadow),
+        inset -1px -1px 2px var(--light-shadow);
+}
+
+.button-group {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+
+}
+
+.button-unit,
+.button-unit2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: var(--form-color);
+    box-shadow: -2px -2px 1px var(--light-shadow), 2px 2px 1px var(--dark-shadow);
+}
+
+.button-unit:hover {
+    box-shadow: -3px -3px 4px var(--light-shadow), 3px 3px 4px var(--dark-shadow);
+}
+
+
+
+.button-unit:focus {
+    box-shadow: inset 1px 1px 2px var(--dark-shadow),
+        inset -1px -1px 2px var(--light-shadow);
+    border: none;
+    outline: none;
+}
+
+
+/* **************** Input & Btn Row ENDS here **************** */
+
+/* ********************* Comments Begins here **************** */
+.container-fluid textarea {
+    align-items: center;
+    ma
+}
+
+.comments {
+    padding: 5px;
+
+    border: none;
+    outline: none;
+    margin-right: 20vw;
+    margin: auto;
+    height: 20vh;
+    width: 50vw;
+    border-radius: 8px;
+    /* For Neumorphism Effect */
+    background-color: #e0e5ec;
+    box-shadow: inset 3px 3px 5px var(--dark-shadow),
+        inset -3px -3px 5px var(--light-shadow);
+    /* For Neumorphism Effect */
+    cursor: pointer;
+}
+
+textarea {
+    font-size: 61px;
+    font-weight: bold;
+    color: var(--form-color);
+    text-shadow: 1px 1px 1px var(--dark-shadow), -1px -1px 1px var(--light-shadow);
+}
+
+
+textarea:focus {
+    box-shadow: inset -1px -1px 2px var(--light-shadow), inset 1px 1px 2px var(--dark-shadow);
+}
+
+/* ********************* Comments Ends here **************** */
+
+/* ********************* Submit button starts here **************** */
+
+.red {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: var(--form-color);
+    box-shadow: -2px -2px 1px var(--light-shadow), 2px 2px 1px var(--dark-shadow);
+    font-size: 20px;
+    color: gray;
+    text-shadow: white 1px 1px;
+}
+
+.red:hover {
+    box-shadow: inset 1px 1px 2px var(--dark-shadow),
+        inset -1px -1px 2px var(--light-shadow);
+}
+
+.red:focus {
+    box-shadow: inset 1px 1px 2px var(--dark-shadow),
+        inset -1px -1px 2px var(--light-shadow);
+    boder: none;
+    outline: none;
+}
+
+/* ********************* Submit button ends here **************** */
